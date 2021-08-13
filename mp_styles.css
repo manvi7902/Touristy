@@ -1,0 +1,327 @@
+html{
+	scroll-behavior: smooth;
+}
+
+/* navbar css */
+.nav{
+    display:flex;
+    justify-content:space-around;
+}
+header#hero-nav, header#hero-exp-nav {
+    top: 0;
+    z-index: 1500;
+    width: 100%;
+    /* height: 100px; */
+    background: rgba(0, 0, 0, 0.733);
+    position: fixed;
+    font-family: 'Staatliches', cursive;
+    font-size:1.3rem;
+}
+
+.comp-nav{
+    height:45px;
+    display:flex;
+    justify-content: space-between;
+    padding:0 20px 0 20px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.nav-link{
+    color:white;
+    margin:0 30px 0 30px;
+    letter-spacing:5px;
+}
+
+
+.right-btn{
+    margin-left:auto;
+    margin-right:10px;
+    /* font-size: 1.3em;; */
+}
+
+.btn-primary{
+    background-color: rgb(53, 193, 241);
+    padding:5px 15px 5px 15px;
+}
+
+.left-btn{
+    margin-right:auto;
+}
+
+.home{
+    color: rgb(53, 193, 241);
+}
+
+
+li>i{
+    padding:auto;
+    margin:0 30px 0 30px;
+}
+
+.nav-link:hover{
+    color:rgb(53, 193, 241);
+}
+
+.bluee{
+    color:rgb(53, 193, 241);
+}
+
+#sess_var{
+    display: none;
+}
+
+#logout{
+    display:none;
+}
+
+/* main body */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.row{
+    /* width:100px; */
+    position:relative;
+    margin-top:80px;
+    margin-bottom:20px;
+}
+
+.logoo{
+    background-color:  rgba(255, 255, 255, 0);
+    border:none;
+    height:110px;
+    width:110px;
+}
+
+/* title-text */
+.title-text{
+    font-size:7rem;
+    margin:20px 0 40px;
+    padding-bottom:20px;
+    font-weight:bolder;
+    display: inline-block;
+    border-bottom: solid 1px rgb(53, 193, 241);
+    color:white;
+    letter-spacing:8px;
+    font-family: 'Staatliches', cursive;
+}
+
+/* subtext */
+.subs{
+    position:relative;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.sub-text{
+    /* color: rgb(53, 193, 241); */
+    color:white;
+    /* background-color:rgba(228, 228, 228, 0.212); */
+    border-radius: 25px;
+    letter-spacing:5px;
+    /* padding:0 10px 0 10px; */
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5rem;
+}
+
+
+/* signup btn */
+.signup-btn{
+    position:relative;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.survey-link{
+    position:relative;
+    color: rgb(53, 193, 241);
+    letter-spacing:5px;
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.survey-link:hover{
+    color:white;
+}
+
+.survey-row{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+    color:white;
+}
+
+.btn-success{
+    background-color:white;
+    border-color:white;
+    color:black;
+}
+
+img {
+    width:75px;
+    height:75px;
+    margin-bottom: 12px;
+}
+
+/* bg image css */
+section{
+    padding:60px;
+}
+
+.home-page{
+    background-image: url("bg-img.jpg"),linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+    height:100vh;
+    position:relative
+}
+  
+.home-page:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .2s linear;
+}
+
+/* section2 bg-img */
+
+.exploring{
+    background-image: url("section2.jpg"),linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+    height:100vh;
+    font-family: 'Staatliches', cursive;
+    position:relative;
+}
+
+.contain{
+    display:inline-block;
+    /* flex-grow: */
+}
+.expAround{
+    text-align: right;
+    padding-left:12px;
+    font-size:5rem;
+    color:white;
+    padding-right:10px;
+    background-color:rgba(53, 194, 241, 0.616);
+    letter-spacing:8px;
+    font-weight:bold;
+    margin-bottom:20px;
+    border-radius:15px;
+    transition-timing-function: cubic-bezier(0.1, 0.3, 0.5, 0.1);
+    transition:0.5s;
+}
+
+.expAround:hover{
+    padding:15px 35px 15px 35px;
+    font-size:5.3rem;
+    letter-spacing: 15px;
+    color:rgb(53, 194, 241);
+    background-color:rgba(255, 255, 255, 0.678);
+}
+
+
+.blue-bg{
+    
+    text-align:right;
+    font-size:2.5rem;
+    color:white;
+    padding-right:15px;
+    padding-left:15px;
+    text-transform:none;
+}
+
+.links{
+    font-size:4rem;
+    background-color:rgba(53, 194, 241, 0.616);
+    border-radius:15px;
+    padding:0 10px 0 10px;
+    transition-timing-function: cubic-bezier(0.1, 0.3, 0.5, 0.1);
+    transition:0.5s;
+    color:white;
+}
+
+
+.links:hover{
+    padding:10px 30px 10px 30px;
+    font-size:4.5rem;
+    letter-spacing: 10px;
+    background-color:rgba(255, 255, 255, 0.678);
+    color:rgb(53, 194, 241);
+}
+
+/* footer css */
+footer{
+    background-color:rgb(4, 100, 133);
+    /* #35c2f1s */
+    display:flex;
+    justify-content:center;
+}
+
+.foot{
+    padding:30px 0 20px 0px;
+    display:flex;
+    flex-direction:row;
+    /* justify-content:space-around; */
+    margin-bottom:20px;
+    border-bottom:1px solid rgb(53, 194, 241);  
+}
+.topic{
+    color:rgb(53, 194, 241);
+    font-family: 'Staatliches', cursive;
+    font-size:1.3rem;
+    letter-spacing:7px;
+    text-decoration:underline;
+}
+
+.col-md-4, .col-md-3{
+    padding:0 20px 0 10px;
+}
+
+img{
+    width:25px;
+    height:25px;
+}
+ 
+.col-md-4> span:nth-of-type(2), .split>span>a, .col-md-3>span:nth-of-type(2){
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+} 
+
+.split {
+    display:flex;
+    flex-direction:row;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* justify-content: space-evenly; */
+}
+
+.split>span:nth-of-type(2){
+    padding-left:10px;
+}
+
+.col-md-2{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    font-size: 1.rem;
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.col-md-2>div>i:nth-of-type(1){
+    font-size:2rem;
+}

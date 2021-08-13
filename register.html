@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="register_styles.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Javascript form validation -->
+    <script src="register_js.js"></script>
+
+    <title>register</title>
+</head>
+
+<body>
+
+   
+    <header id="hero-nav">
+        <ul class="comp-nav">
+        <!-- <button class="btn btn-primary left-btn"><i class="fas fa-search"></i></button> -->
+        <ul class="nav justify-content-center">
+            <li>
+              <a class="nav-link " href="mainpage.php" id="home"><i class="fas fa-paper-plane" id="home"></i></a>
+            </li>
+        </ul>
+    </ul>
+</header>
+
+    <section class="home-page">
+        <div class="row">
+            <div class="container outer">
+                <div class=" col-md-4 inner">
+                    <div class="col-md-12">
+                        <h3 class="lead-text"> Join Us with social media </h3>
+                        <div id="social-platforms">
+                            <div class="media-container">
+                                <a class="btnn btnn-icon btnn-facebook" href="#"><i class="fa fa-facebook">
+                                    </i><span>Facebook</span></a>
+                            </div>
+                            <div class="media-container">
+                                <a class="btnn btnn-icon btnn-google" href="#"><i class="fa fa-google">
+                                    </i><span>Google</span></a>
+                            </div>
+                            <hr id="or">
+                            <h4 class="already">Already a Member?</h4>
+                            <div class="media-container">
+                                <a href="login.php" class="btnn btnn-icon btnn-login"><i class="fas fa-user"></i>
+                                    <span>Login</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7 inner-2">
+                    <div class="col-md-10 regi-form">
+                        <h3 class="lead-text"> Create a new account now </h3>
+                        <form name='regi' onSubmit="return formValidation();" action="http://localhost/project_php/register_php.php" method="POST">
+                            <div class="form-group">
+                                <label class="form-labels">
+                                    Name
+                                </label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-labels">
+                                    Email
+                                </label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-labels">
+                                    Create Password
+                                </label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="form-labels">
+                                    Confirm password
+                                </label>
+                                <input type="password" class="form-control" id="confirm_p" name="confirm_p">
+                            </div>
+
+
+                            <div class="form-group d-flex justify-content-around align-items-center ">
+                                <div class="split">
+                                    <input type="checkbox" id="TandC" name="terms" checked>
+                                    <label class="form-labels ">
+                                        Terms and conditions
+                                    </label>
+                                </div>
+                                <a href="#" class="btn btn-primary" name="Submit"><input type="submit" value="Go!" class="gogo"></a>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/7a2a09b2a3.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
